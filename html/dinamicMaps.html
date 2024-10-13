@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Map</title>
+    <link rel="stylesheet" href="./styles/dinamicMap.css">
+</head>
+<body>
+    <h1>Mapa Dinamico</h1>
+
+    <!-- Barra de busqueda de lugares -->
+    <input type="text" id="pac-input" class="controls" placeholder="Buscar Lugares">
+    <div id="map"></div>
+
+    <script src="../backend/dinamicMap.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3pKkj-H_bOea9hkxpuyobPiOyuWDCHeY&libraries=places&callback=initMap">
+    </script>
+</body>
+</html>
